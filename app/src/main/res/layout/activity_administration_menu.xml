@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vaccinos.administration.AdministrationMenuActivity">
+
+
+    <include layout="@layout/navbar_layout"
+      />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="@string/administration"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAjouterSoignant"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/ajoutSoignant"
+        android:textColor="@color/white"
+
+
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAjouterVaccin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonAjouterVaccin"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/ajoutVaccin"
+        android:textColor="@color/white"
+
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAjoutMembre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonAjoutMembre"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/ajoutMembre"
+        android:textColor="@color/white"
+
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSuppMembre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonSuppMembre"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/suppMembre"
+        android:textColor="@color/white"
+
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReception"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buttonReception"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/reception"
+        android:textColor="@color/white"
+
+
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
+</androidx.constraintlayout.widget.ConstraintLayout>

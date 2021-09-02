@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".injection.InjectionActivity">
+
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="@string/text_INJECTION"
+            android:textColor="@color/black"
+            android:textSize="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textChoixDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textChoixDate"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerHoraire" />
+
+        <TextView
+            android:id="@+id/choixDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginTop="16dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            android:text="@string/choixDate"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textChoixDate" />
+
+        <TextView
+            android:id="@+id/textChoixMedecin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textChoixMedecin"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/choixDate" />
+
+        <TextView
+            android:id="@+id/textnompatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textnompatient"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerMedecin" />
+
+        <TextView
+            android:id="@+id/textpmailpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textpmailpatient"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPrenompatient" />
+
+        <TextView
+            android:id="@+id/textptelpatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textptelpatient"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMailPatient" />
+
+        <TextView
+            android:id="@+id/textprenompatient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textprenompatient"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNomPatient" />
+
+        <Spinner
+            android:id="@+id/spinnerMedecin"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/simple_spinner_dropdown"
+            android:dropDownWidth="300dp"
+            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+            android:paddingRight="14dp"
+            android:textSize="40dp"
+            android:popupBackground="@android:color/white"
+
+
+            android:popupElevation="3dp"
+            android:stateListAnimator="@drawable/spinner_sla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textChoixMedecin" />
+
+        <Spinner
+            android:id="@+id/spinnerHoraire"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/simple_spinner_dropdown"
+            android:dropDownWidth="300dp"
+            android:textSize="40dp"
+
+            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+            android:paddingRight="14dp"
+            android:popupBackground="@android:color/white"
+
+
+            android:popupElevation="3dp"
+            android:stateListAnimator="@drawable/spinner_sla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textchoixcreneau" />
+
+        <TextView
+            android:id="@+id/textchoixcreneau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:text="@string/textchoixcreneau"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+        <Spinner
+            android:id="@+id/spinnerInjection"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/simple_spinner_dropdown"
+            android:dropDownWidth="300dp"
+            android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+            android:textSize="40dp"
+
+            android:paddingRight="14dp"
+            android:popupBackground="@android:color/white"
+            android:popupElevation="3dp"
+            android:stateListAnimator="@drawable/spinner_sla"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textchoixvaccin" />
+
+        <TextView
+            android:id="@+id/textchoixvaccin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/textchoixvaccin"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTelPatient" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="600dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/principal_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="600dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="92dp"
+            android:background="@color/principal_blue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonInjectionValid" />
+
+        <Button
+            android:id="@+id/buttonInjectionValid"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_input"
+            android:text="@string/validate"
+            android:textColor="@color/white"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerInjection" />
+
+        <EditText
+            android:id="@+id/editNomPatient"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/textnompatient"
+            android:inputType="textPersonName"
+            android:textSize="40dp"
+
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textnompatient" />
+
+        <EditText
+            android:id="@+id/editPrenompatient"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/textprenompatient"
+            android:inputType="textPersonName"
+            android:textSize="40dp"
+
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textprenompatient" />
+
+        <EditText
+            android:id="@+id/editMailPatient"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/textpmailpatient"
+            android:inputType="textEmailAddress"
+            android:textSize="40dp"
+
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textpmailpatient" />
+
+        <EditText
+            android:id="@+id/editTelPatient"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/textptelpatient"
+            android:inputType="phone"
+            android:textSize="40dp"
+
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textptelpatient" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

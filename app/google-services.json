@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "340108802157",
+    "project_id": "vaccinos",
+    "storage_bucket": "vaccinos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340108802157:android:d08e589a4d82f6dc1b2764",
+        "android_client_info": {
+          "package_name": "com.vaccinos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "340108802157-pu8cqn9bb9hug3rl14o07rbhtsu07ogi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbd3LNxKMU0nxVQIJIekZIdDf-_hO_H24"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "340108802157-pu8cqn9bb9hug3rl14o07rbhtsu07ogi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administration.AjoutMembreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".administration.AjoutMembreActivity"
+        tools:layout_editor_absoluteX="-140dp"
+        tools:layout_editor_absoluteY="-115dp">
+
+
+        <View
+            android:id="@+id/view6"
+            android:layout_width="600dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="56dp"
+            android:background="@color/principal_blue"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+        <include
+            layout="@layout/navbar_layout"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="@string/textAjoutermembre"
+            android:textColor="@color/black"
+            android:textSize="70dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editNomMembre"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:textSize="40dp"
+
+            android:layout_marginTop="40dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/nomMembre"
+            android:inputType="textPersonName"
+
+
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+        <EditText
+            android:id="@+id/editPrenomMembre"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+
+            android:layout_marginTop="36dp"
+            android:background="@drawable/shape_input_droit"
+            android:textSize="40dp"
+
+
+            android:hint="@string/prenomMembre"
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editNomMembre" />
+
+        <EditText
+            android:id="@+id/editEmailMembre"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:textSize="40dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/mailMembre"
+
+
+            android:inputType="textPersonName"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editPrenomMembre" />
+
+        <EditText
+            android:id="@+id/editMotDePasseMembre"
+
+
+            android:layout_marginTop="36dp"
+            android:background="@drawable/shape_input_droit"
+            android:hint="@string/connexion_password"
+            android:layout_width="693dp"
+            android:layout_height="76dp"
+            android:textSize="40dp"
+
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editEmailMembre" />
+
+        <Button
+            android:id="@+id/buttonAjoutMembre2"
+            android:layout_width="536dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="48dp"
+
+
+            android:textSize="40dp"
+            android:background="@drawable/shape_input"
+            android:text="@string/ajoutMembre"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editMotDePasseMembre" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

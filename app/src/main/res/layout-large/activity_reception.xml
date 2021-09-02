@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".administration.ReceptionActivity">
+
+    <include
+        layout="@layout/navbar_layout"
+        tools:layout_editor_absoluteX="34dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/principal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="@string/receptiontitre"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/textTypevaccin"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <Spinner
+        android:id="@+id/spinnerVaccin"
+        style="@style/Widget.AppCompat.Spinner"
+
+        android:layout_width="693dp"
+        android:layout_height="76dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/simple_spinner_dropdown"
+        android:dropDownWidth="300dp"
+        android:dropDownVerticalOffset="?attr/dropdownListPreferredItemHeight"
+        android:paddingRight="14dp"
+        android:popupBackground="@android:color/white"
+
+
+        android:popupElevation="3dp"
+        android:stateListAnimator="@drawable/spinner_sla"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/textQuantiteVaccin"
+        android:textColor="@color/black"
+        android:textSize="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerVaccin" />
+
+    <EditText
+        android:id="@+id/editNombreDeFlacons"
+        android:textSize="40dp"
+        android:layout_width="693dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_input_droit"
+        android:hint="@string/quantiteFlacon"
+        android:inputType="number"
+
+
+        android:paddingStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/buttonAjoutStock"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="56dp"
+
+
+        android:background="@drawable/shape_input"
+        android:text="@string/ajouterProduit"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNombreDeFlacons" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".planing.PlanningActivity">
+
+    <include
+        layout="@layout/navbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+       />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="600dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/principal_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="@string/planning"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="828dp"
+        android:layout_height="630dp"
+        android:layout_marginTop="68dp"
+        android:background="@color/principal_blue"
+        android:textSize="70dp"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vaccinos.administration.AdministrationMenuActivity">
+
+
+    <include
+        layout="@layout/navbar_layout"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:text="@string/administration"
+        android:textColor="@color/black"
+        android:textSize="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAjouterSoignant"
+        android:layout_width="536dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/ajoutSoignant"
+
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <Button
+        android:id="@+id/buttonAjouterVaccin"
+        android:layout_width="536dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/ajoutVaccin"
+
+        android:textSize="40dp"
+        android:textColor="@color/white"
+
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAjouterSoignant" />
+
+    <Button
+        android:id="@+id/buttonAjoutMembre"
+        android:layout_width="536dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/ajoutMembre"
+
+        android:textSize="40dp"
+        android:textColor="@color/white"
+
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAjouterVaccin" />
+
+    <Button
+        android:id="@+id/buttonSuppMembre"
+        android:layout_width="536dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/suppMembre"
+
+
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAjoutMembre" />
+
+    <Button
+        android:id="@+id/buttonReception"
+        android:layout_width="536dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="96dp"
+        android:background="@drawable/shape_input"
+        android:text="@string/reception"
+
+
+        android:textColor="@color/white"
+        android:textSize="40dp"
+
+
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSuppMembre" />
+</androidx.constraintlayout.widget.ConstraintLayout>
